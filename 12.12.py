@@ -17,17 +17,17 @@
 #print (is_last_char_k("Jakub"))
 
 
-#def card_hide(card_num):
-    # return 12 * "*" + card_num[12:]
-   # hiden_card = []
-   # for i in range(len(card_num)):
-       # if i < 12:
-        #    hiden_card.append("*")
-       # else:
-       #     hiden_card.append(card_num[i])
-   # return "".join
+def card_hide(card_num):
+    return 12 * "*" + card_num[12:]
+   hiden_card = []
+   for i in range(len(card_num)):
+       if i < 12:
+           hiden_card.append("*")
+       else:
+           hiden_card.append(card_num[i])
+   return "".join
    
-#print(card_hide("132568834900123468"))
+print(card_hide("132568834900123468"))
 
 
 x = int(input("zadej váhu"))
