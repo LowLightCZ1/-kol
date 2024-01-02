@@ -1,9 +1,11 @@
-numbers = [1, -5, -9, 7, 12]
+numbers = [1, 1, 5, 5, 12]
 
-# print(numbers.count(1))
-# print(numbers.count(5))
-# print(numbers.count(4))
-# print(numbers.count(6))
+def list_Count(numbers):
+    list = {}
+    for i in numbers:
+        if list.get(i) is None:
+            list[i] = numbers.count(i)
+    return list
 
+print(list_Count(numbers))
 
-        
